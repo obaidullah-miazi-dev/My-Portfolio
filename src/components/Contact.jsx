@@ -6,7 +6,7 @@ import { Mail, Github, Linkedin, Instagram, Send, Facebook } from 'lucide-react'
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 relative overflow-hidden bg-linear-to-b from-transparent via-[#0f0f1e] to-black">
+    <section id="contact" className="py-20 relative overflow-hidden bg-linear-to-b from-transparent via-[#0f0f1e] to-black mt-16">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
