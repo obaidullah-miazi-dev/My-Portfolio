@@ -24,7 +24,7 @@ const Projects = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-thin myFont text-white">
@@ -59,7 +59,7 @@ const Projects = () => {
               key={project.id}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ delay: index * 0.1 }}
               className={`group relative bg-gray-900/60 backdrop-blur-md rounded-2xl overflow-hidden border border-purple-500/50 shadow-xl shadow-purple-500/20 transition-all duration-500`}
             >

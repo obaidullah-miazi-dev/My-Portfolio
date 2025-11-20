@@ -11,7 +11,7 @@ const Contact = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-thin myFont text-white">
@@ -27,7 +27,7 @@ const Contact = () => {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className="space-y-10"
           >
             <div className="space-y-5">
@@ -64,7 +64,7 @@ const Contact = () => {
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
           >
             <form
               action="https://formsubmit.co/obaidullahmiazi.dev@gmail.com"

@@ -4,7 +4,7 @@ import React from 'react';
 import Container from './Container';
 import { motion } from 'framer-motion';
 
-// Import all logos (put these in src/assets/icons/ or wherever you prefer)
+// brand logos 
 import html from '../assets/icons/html5-original.svg';
 import css from '../assets/icons/css3-original.svg';
 import tailwind from '../assets/icons/tailwindcss-icon.svg';
@@ -49,7 +49,7 @@ const Skills = () => {
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="text-center text-4xl md:text-5xl font-thin myFont text-white mb-16"
         >
           Skills & <span className="text-purple-400">Tools</span>
@@ -67,7 +67,7 @@ const Skills = () => {
                   key={item.name}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  viewport={{ once: false }}
                   transition={{ delay: index * 0.08 }}
                   
                   className="group relative bg-gray-900/60 backdrop-blur-md border border-purple-400 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 shadow-xl hover:shadow-purple-500/30 transition-all duration-300"
@@ -96,7 +96,7 @@ const Skills = () => {
                   key={item.name}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  viewport={{ once: false }}
                   transition={{ delay: index * 0.08 }}
                   className="group relative bg-gray-900/60 backdrop-blur-md border border-purple-400 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 shadow-xl hover:shadow-purple-500/30 transition-all duration-500"
                 >
