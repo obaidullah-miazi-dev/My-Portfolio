@@ -18,10 +18,15 @@ const Banner = () => {
         >
           Hello ! I'm Obaidullah Miazi
         </motion.h2>
-        <h3 className="myFont text-center text-sm 2xl:hidden">
+        <motion.h3
+        initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.8 }}
+        className="myFont text-center text-sm 2xl:hidden">
           a passionate MERN Stack Developer. dedicated to building clean,
           scalable, and user focused web applications.
-        </h3>
+        </motion.h3>
         <div>
           <img
             src={me}
