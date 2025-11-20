@@ -77,7 +77,7 @@ const Projects = () => {
                   alt={project.title}
                   className="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
 
               {/* Content */}
@@ -106,7 +106,7 @@ const Projects = () => {
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-purple-400 hover:text-white hover:text-purple-300 transition-colors"
+                    className="flex items-center gap-2 text-purple-400 hover:text-white transition-colors"
                   >
                     <ExternalLink size={20} />
                     <span>Live Demo</span>

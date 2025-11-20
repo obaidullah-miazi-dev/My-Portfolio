@@ -76,7 +76,7 @@ const Navbar = () => {
                 >
                   {link.name}
                   {activeSection === link.href.substring(1) && (
-                    <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full" />
+                    <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-linear-to-r from-purple-500 to-pink-500 rounded-full" />
                   )}
                 </a>
               </li>

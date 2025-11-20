@@ -9,8 +9,8 @@
     "technologies": ["React", "Node.js", "Express", "MongoDB", "Firebase", "Tailwind CSS"],
     "image": "https://i.ibb.co.com/7D6jjfk/smart-deals-shop-home-page2.png",
     "liveLink": "https://smart-deals-shop.web.app/",
-    "clientRepo": "https://github.com/obaidullah-miazi/smart-deals-client",
-    "serverRepo": "https://github.com/obaidullah-miazi/smart-deals-server",
+    "clientRepo": "https://github.com/obaidullah-miazi-dev/Smart-Deals-Client",
+    "serverRepo": "https://github.com/obaidullah-miazi-dev/smart-deals-DB-server",
     "featured": true
   },
   {
@@ -22,9 +22,9 @@
     "description": "A community-driven event management platform where users can create, join, and track social service events such as cleaning drives, tree plantation, etc.",
     "technologies": ["React", "Node.js", "Express", "MongoDB", "Firebase", "Tailwind CSS"],
     "image": "https://i.ibb.co.com/TqkDQt25/helping-hands-home1.png",
-    "liveLink": "https://helping-hands.web.app/",
-    "clientRepo": "https://github.com/obaidullah-miazi/helping-hands-client",
-    "serverRepo": "",
+    "liveLink": "https://helping-hands-org.web.app/",
+    "clientRepo": "https://github.com/obaidullah-miazi-dev/Helping-Hands-Website",
+    "serverRepo": "https://github.com/obaidullah-miazi-dev/Helping-Hands-Server",
     "featured": true
   },
   {
@@ -36,8 +36,8 @@
     "description": "A responsive game listing web app where users can explore various games with animations using Framer Motion and GSAP.",
     "technologies": ["React", "Framer Motion", "GSAP","Firebase","Tailwind CSS" ],
     "image": "https://i.ibb.co.com/BV99kzBD/pixelhood-gamezone-web-app-first1.png",
-    "liveLink": "https://pixelhood-game-zone.web.app/",
-    "clientRepo": "https://github.com/obaidullah-miazi/pixelhood",
+    "liveLink": "https://pixelhood-gamezone.web.app/",
+    "clientRepo": "https://github.com/obaidullah-miazi-dev/PixelHood-GameZone",
     "serverRepo": "",
     "featured": false
   },
