@@ -53,7 +53,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl  border-b border-purple-500/20 shadow-lg">
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-black/50 md:bg-transparent  border-b border-purple-500/20 shadow-lg">
       <Container>
         <div className="flex justify-between items-center py-5">
           {/* Logo */}

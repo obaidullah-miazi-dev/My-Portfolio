@@ -45,7 +45,7 @@ const ProjectDetails = () => {
             <ArrowLeft size={24} /> Back to Projects
           </Link>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-12 items-start">
             {/* Image Slider */}
             <div className="space-y-6">
               <Swiper
