@@ -1,19 +1,19 @@
 // src/components/Navbar.jsx
-import React, { useState, useEffect } from 'react';
-import Container from './Container';
-import { Menu, X } from 'lucide-react';
-import logo from '../assets/images/Logo.png';
+import React, { useState, useEffect } from "react";
+import Container from "./Container";
+import { DownloadIcon, Menu, X } from "lucide-react";
+import logo from "../assets/images/Logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState("home");
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "#projects" },
+    { name: "Contact", href: "#contact" },
   ];
 
   // Smooth scroll function
@@ -24,8 +24,8 @@ const Navbar = () => {
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
+        behavior: "smooth",
+        block: "start",
       });
     }
   };
@@ -33,8 +33,8 @@ const Navbar = () => {
   // Highlight active section on scroll
   useEffect(() => {
     const handleScroll = () => {
-      let current = 'home';
-      const sections = navLinks.map(link => link.href.substring(1));
+      let current = "home";
+      const sections = navLinks.map((link) => link.href.substring(1));
 
       for (const section of sections) {
         const el = document.getElementById(section);
@@ -48,8 +48,8 @@ const Navbar = () => {
       setActiveSection(current);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -57,8 +57,16 @@ const Navbar = () => {
       <Container>
         <div className="flex justify-between items-center py-5">
           {/* Logo */}
-          <a href="#home" onClick={(e) => handleNavClick(e, '#home')} className="flex items-center gap-3">
-            <img src={logo} alt="Obaidullah Miazi" className="w-20 rounded-lg" />
+          <a
+            href="#home"
+            onClick={(e) => handleNavClick(e, "#home")}
+            className="flex items-center gap-3"
+          >
+            <img
+              src={logo}
+              alt="Obaidullah Miazi"
+              className="w-20 rounded-lg"
+            />
           </a>
 
           {/* Desktop Menu */}
@@ -70,8 +78,8 @@ const Navbar = () => {
                   onClick={(e) => handleNavClick(e, link.href)}
                   className={`relative font-medium transition-all duration-300 ${
                     activeSection === link.href.substring(1)
-                      ? 'text-purple-400'
-                      : 'text-gray-300 hover:text-white'
+                      ? "text-purple-400"
+                      : "text-gray-300 hover:text-white"
                   }`}
                 >
                   {link.name}
@@ -81,6 +89,15 @@ const Navbar = () => {
                 </a>
               </li>
             ))}
+
+            {/* resume download button  */}
+            <a
+              href="/Obaidullah's_Resume.pdf"
+              download
+              className="px-5 py-2 rounded-full bg-linear-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition-transform duration-500 flex items-center gap-1"
+            >
+              Get Resume <DownloadIcon size={20} />
+            </a>
           </ul>
 
           {/* Mobile Menu Button (Mobile) */}
@@ -95,10 +112,10 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div
           className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out ${
-            isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+            isOpen ? "max-h-[480px] opacity-100" : "max-h-0 opacity-0"
           }`}
         >
-          <ul className="py-4 space-y space-y-4 border-t border-purple-500/20 pt-6">
+          <ul className="py-4 space-y space-y-4 border-t border-purple-500/20 pt-6 ">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
@@ -106,14 +123,25 @@ const Navbar = () => {
                   onClick={(e) => handleNavClick(e, link.href)}
                   className={`block py-3 text-lg font-medium transition-colors ${
                     activeSection === link.href.substring(1)
-                      ? 'text-purple-400'
-                      : 'text-gray-300'
+                      ? "text-purple-400"
+                      : "text-gray-300"
                   }`}
                 >
                   {link.name}
                 </a>
               </li>
             ))}
+
+            {/* resume download button  */}
+            <li>
+              <a
+                href="/Obaidullah's_Resume.pdf"
+                download
+                className="block text-center py-3 mt-4 rounded-full bg-linear-to-r from-purple-500 to-pink-500 text-white font-semibold flex items-center justify-center gap-2"
+              >
+                Download Resume <DownloadIcon size={20}/>
+              </a>
+            </li>
           </ul>
         </div>
       </Container>
