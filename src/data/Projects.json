@@ -6,7 +6,14 @@
     "category": "E-commerce",
     "shortDescription": "A MERN stack bidding-based e-commerce marketplace.",
     "description": "A complete MERN stack application where users can buy, sell, and bid on products with authentication and dashboard features.",
-    "technologies": ["React", "Node.js", "Express", "MongoDB", "Firebase", "Tailwind CSS"],
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Firebase",
+      "Tailwind CSS"
+    ],
     "image": "https://i.ibb.co.com/7D6jjfk/smart-deals-shop-home-page2.png",
     "image2": "https://i.ibb.co.com/JWqXJyR8/smart-deals-shop-home-page.png",
     "image3": "https://i.ibb.co.com/PsyXds5M/smart-deals-shop-details.png",
@@ -22,9 +29,16 @@
     "category": "Community Service Platform",
     "shortDescription": "A social events platform connecting people through community activities.",
     "description": "A community-driven event management platform where users can create, join, and track social service events such as cleaning drives, tree plantation, etc.",
-    "technologies": ["React", "Node.js", "Express", "MongoDB", "Firebase", "Tailwind CSS"],
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Firebase",
+      "Tailwind CSS"
+    ],
     "image": "https://i.ibb.co.com/TqkDQt25/helping-hands-home1.png",
-    "image2": "https://i.ibb.co.com/mVKHDYCW/helping-hands-home2.png",
+    "image2": "https://i.ibb.co.com/1fhPNbFj/helping-hands-home-portfolio-show.png",
     "image3": "https://i.ibb.co.com/mVKHDYCW/helping-hands-home2.png",
     "liveLink": "https://helping-hands-org.web.app/",
     "clientRepo": "https://github.com/obaidullah-miazi-dev/Helping-Hands-Website",
@@ -38,9 +52,15 @@
     "category": "Entertainment",
     "shortDescription": "A modern game zone app showcasing multiple games.",
     "description": "A responsive game listing web app where users can explore various games with animations using Framer Motion and GSAP.",
-    "technologies": ["React", "Framer Motion", "GSAP","Firebase","Tailwind CSS" ],
+    "technologies": [
+      "React",
+      "Framer Motion",
+      "GSAP",
+      "Firebase",
+      "Tailwind CSS"
+    ],
     "image": "https://i.ibb.co.com/BV99kzBD/pixelhood-gamezone-web-app-first1.png",
-    "image2": "https://i.ibb.co.com/Zpgcz5zc/pixelhood-gamezone-web-app-contact.png",
+    "image2": "https://i.ibb.co.com/zh1nKymn/pixelhood-gamezone-web-app-portfolio1.png",
     "image3": "https://i.ibb.co.com/Zpgcz5zc/pixelhood-gamezone-web-app-contact.png",
     "liveLink": "https://pixelhood-gamezone.web.app/",
     "clientRepo": "https://github.com/obaidullah-miazi-dev/PixelHood-GameZone",
@@ -62,5 +82,21 @@
     "clientRepo": "https://github.com/obaidullah-miazi/portfolio",
     "serverRepo": "",
     "featured": false
+  },
+  {
+    "id": 5,
+    "title": "Recipe Collection",
+    "slug": "recipe-collection",
+    "category": "Community Service Platform",
+    "shortDescription": "A fully responsive recipe sharing platform built with Next.js, Tailwind CSS, Express, and MongoDB.",
+    "description": "A fully responsive recipe sharing platform built with Next.js, Tailwind CSS, Express, and MongoDB. Users can explore, add, and manage recipes through a clean and optimized interface. Designed for fast performance, secure data handling, and a smooth user experience.",
+    "technologies": ["Next.js", "Tailwind CSS","Express","MongoDB","Node.js", "Framer Motion"],
+    "image": "https://i.ibb.co.com/S4t5XbZ5/flavor-vault-full-home-banner.png",
+    "image2": "https://i.ibb.co.com/Fqj8fSZp/flavor-vault-full-home-for-portfolio.png",
+    "image3": "https://i.ibb.co.com/GfDtTMf8/flavor-vault-details.png",
+    "liveLink": "https://flavor-vault-my-first-next-js-web.vercel.app",
+    "clientRepo": "https://github.com/obaidullah-miazi-dev/FlavorVault-my-first-next.js-web",
+    "serverRepo": "https://github.com/obaidullah-miazi-dev/FlavorVault-server",
+    "featured": true
   }
 ]

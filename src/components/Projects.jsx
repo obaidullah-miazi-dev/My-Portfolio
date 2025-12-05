@@ -73,7 +73,7 @@ const Projects = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false }}
                 transition={{ delay: index * 0.1 }}
-                className={`group relative bg-gray-900/60 backdrop-blur-md rounded-2xl overflow-hidden border border-purple-500/50 shadow-xl shadow-purple-500/20 transition-all duration-500`}
+                className={`group relative bg-gray-900/60 backdrop-blur-md rounded-2xl overflow-hidden border border-purple-500/50 shadow-xl shadow-purple-500/20 transition-all duration-500 h-full`}
               >
                 {/* Featured Badge */}
                 {project.featured && (
